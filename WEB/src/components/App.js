@@ -7,7 +7,6 @@ import Medicines from './medicines/Medicines';
 import Schedule from './schedule/Schedule';
 import Register from './Register';
 
-
 class App extends Component {
   render() {
     return (
