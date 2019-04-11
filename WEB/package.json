@@ -1,19 +1,30 @@
 {
-  "name": "web",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "front-end",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "devDependencies": {
-    "@babel/cli": "^7.1.0",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "@fortawesome/fontawesome-free": "^5.8.1"
   }
 }
