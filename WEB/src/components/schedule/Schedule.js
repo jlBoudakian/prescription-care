@@ -9,12 +9,12 @@ class Schedule extends Component {
             <div>
                 <Header />
                 <Sidebar />
-                <div class="content">
+                <div className="content">
 
                     {/* Start Page Header */}
-                    <div class="page-header">
-                        <h1 class="title">Home</h1>
-                        <ol class="breadcrumb">
+                    <div className="page-header">
+                        <h1 className="title">Home</h1>
+                        <ol className="breadcrumb">
                             <li><a href="/home">Home</a></li>
                             <li><a href="/medicines">Medicines</a></li>
                             <li><a href="/schedule">Schedule</a></li>
@@ -23,30 +23,30 @@ class Schedule extends Component {
                     {/* End Page Header */}
 
                     {/* START CONTAINER */}
-                    <div class="container-default">
+                    <div className="container-default">
 
-                        <div class="calendar-layout clearfix">
+                        <div className="calendar-layout clearfix">
 
-                            <div class="col-md-2">
+                            <div className="col-md-2">
 
                                 <div id='external-events'>
-                                    <h6 class="font-title"><i class="fa fa-arrows"></i> DRAGGABLE EVENTS</h6>
+                                    <h6 className="font-title"><i className="fa fa-arrows"></i> DRAGGABLE EVENTS</h6>
                                     <p>Drag into calendar</p>
-                                    <div class='fc-event'>Meeting with Developer Team</div>
-                                    <div class='fc-event'>Office Party</div>
-                                    <div class='fc-event'>March Invoices</div>
-                                    <div class='fc-event'>Call John</div>
-                                    <div class='fc-event'>Dinner with Team</div>
-                                    <div class='fc-event'>Design an iOS App</div>
-                                    <div class='fc-event'>Make a Sandwich</div>
-                                    <div class='fc-event'>Meeting with Customers</div>
+                                    <div className='fc-event'>Meeting with Developer Team</div>
+                                    <div className='fc-event'>Office Party</div>
+                                    <div className='fc-event'>March Invoices</div>
+                                    <div className='fc-event'>Call John</div>
+                                    <div className='fc-event'>Dinner with Team</div>
+                                    <div className='fc-event'>Design an iOS App</div>
+                                    <div className='fc-event'>Make a Sandwich</div>
+                                    <div className='fc-event'>Meeting with Customers</div>
 
 
                                 </div>
 
                             </div>
 
-                            <div class="col-md-10">
+                            <div className="col-md-10">
                                 <div id='calendar'></div>
                             </div>
 

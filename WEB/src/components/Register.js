@@ -3,35 +3,35 @@ import React, { Component } from 'react';
 class Register extends Component {
     render() {
         return (
-            <div class="login-form">
+            <div className="login-form">
                 <form action="index.html" >
-                    <div class="top">
+                    <div className="top">
                         <h1>Register</h1>
                         <h4>Join to our community now !</h4>
                     </div>
-                    <div class="form-area">
-                        <div class="group">
-                            <input type="text" class="form-control" placeholder="Username" />
-                            <i class="fa fa-user"></i>
+                    <div className="form-area">
+                        <div className="group">
+                            <input type="text" className="form-control" placeholder="Username" />
+                            <i className="fa fa-user"></i>
                         </div>
-                        <div class="group">
-                            <input type="text" class="form-control" placeholder="E-mail" />
-                            <i class="fa fa-envelope-o"></i>
+                        <div className="group">
+                            <input type="text" className="form-control" placeholder="E-mail" />
+                            <i className="fa fa-envelope-o"></i>
                         </div>
-                        <div class="group">
-                            <input type="password" class="form-control" placeholder="Password" />
-                            <i class="fa fa-key"></i>
+                        <div className="group">
+                            <input type="password" className="form-control" placeholder="Password" />
+                            <i className="fa fa-key"></i>
                         </div>
-                        <div class="group">
-                            <input type="password" class="form-control" placeholder="Password again" />
-                            <i class="fa fa-key"></i>
+                        <div className="group">
+                            <input type="password" className="form-control" placeholder="Password again" />
+                            <i className="fa fa-key"></i>
                         </div>
-                        <button type="submit" class="btn btn-default btn-block">REGISTER NOW</button>
+                        <button type="submit" className="btn btn-default btn-block">REGISTER NOW</button>
                     </div>
                 </form>
-                <div class="footer-links row">
-                    <div class="col-xs-6"><a href="/"><i class="fa fa-sign-in"></i> Login</a></div>
-                    <div class="col-xs-6 text-right"><a href="#"><i class="fa fa-lock"></i> Forgot password</a></div>
+                <div className="footer-links row">
+                    <div className="col-xs-6"><a href="/"><i className="fa fa-sign-in"></i> Login</a></div>
+                    <div className="col-xs-6 text-right"><a href="#"><i className="fa fa-lock"></i> Forgot password</a></div>
                 </div>
             </div>
         )

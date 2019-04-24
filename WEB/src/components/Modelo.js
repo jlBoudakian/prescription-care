@@ -6,16 +6,16 @@ class Teste extends Component {
         return (
             <div>
                 {/* SIDEBAR */}
-                <div class="sidebar clearfix">
-                    <ul class="sidebar-panel nav">
-                        <li class="sidetitle">MAIN</li>
-                        <li><a href="index.html"><span class="icon color5"><i class="fa fa-home"></i></span>Dashboard<span
-                            class="label label-default">2</span></a></li>
-                        <li><a href="mailbox.html"><span class="icon color6"><i class="fa fa-envelope-o"></i></span>Mailbox<span
-                            class="label label-default">19</span></a></li>
+                <div className="sidebar clearfix">
+                    <ul className="sidebar-panel nav">
+                        <li className="sidetitle">MAIN</li>
+                        <li><a href="index.html"><span className="icon color5"><i className="fa fa-home"></i></span>Dashboard<span
+                            className="label label-default">2</span></a></li>
+                        <li><a href="mailbox.html"><span className="icon color6"><i className="fa fa-envelope-o"></i></span>Mailbox<span
+                            className="label label-default">19</span></a></li>
                         <li>
-                            <a href="#"><span class="icon color7"><i class="fa fa-flask"></i></span>UI Elements<span
-                                class="caret"></span></a>
+                            <a href="#"><span className="icon color7"><i className="fa fa-flask"></i></span>UI Elements<span
+                                className="caret"></span></a>
                             <ul>
                                 <li><a href="icons.html">Icons</a></li>
                                 <li><a href="tabs.html">Tabs</a></li>
@@ -24,36 +24,36 @@ class Teste extends Component {
                                 <li><a href="notifications.html">Notifications</a></li>
                                 <li><a href="modal-boxes.html">Modal Boxes</a></li>
                                 <li><a href="progress-bars.html">Progress Bars</a></li>
-                                <li><a href="others.html">Others<span class="label label-danger">NEW</span></a></li>
+                                <li><a href="others.html">Others<span className="label label-danger">NEW</span></a></li>
                             </ul>
                         </li>
-                        <li><a href="charts.html"><span class="icon color8"><i class="fa fa-bar-chart"></i></span>Charts</a></li>
+                        <li><a href="charts.html"><span className="icon color8"><i className="fa fa-bar-chart"></i></span>Charts</a></li>
                         <li>
-                            <a href="#"><span class="icon color9"><i class="fa fa-th"></i></span>Tables<span class="caret"></span></a>
+                            <a href="#"><span className="icon color9"><i className="fa fa-th"></i></span>Tables<span className="caret"></span></a>
                             <ul>
                                 <li><a href="basic-table.html">Basic Tables</a></li>
                                 <li><a href="data-table.html">Data Tables</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><span class="icon color10"><i class="fa fa-check-square-o"></i></span>Forms<span
-                                class="caret"></span></a>
+                            <a href="#"><span className="icon color10"><i className="fa fa-check-square-o"></i></span>Forms<span
+                                className="caret"></span></a>
                             <ul>
                                 <li><a href="form-elements.html">Form Elements</a></li>
                                 <li><a href="layouts.html">Form Layouts</a></li>
                                 <li><a href="text-editors.html">Text Editors</a></li>
                             </ul>
                         </li>
-                        <li><a href="widgets.html"><span class="icon color11"><i class="fa fa-diamond"></i></span>Widgets</a></li>
-                        <li><a href="calendar.html"><span class="icon color8"><i class="fa fa-calendar-o"></i></span>Calendar<span
-                            class="label label-danger">NEW</span></a></li>
-                        <li><a href="typography.html"><span class="icon color12"><i class="fa fa-font"></i></span>Typography</a></li>
+                        <li><a href="widgets.html"><span className="icon color11"><i className="fa fa-diamond"></i></span>Widgets</a></li>
+                        <li><a href="calendar.html"><span className="icon color8"><i className="fa fa-calendar-o"></i></span>Calendar<span
+                            className="label label-danger">NEW</span></a></li>
+                        <li><a href="typography.html"><span className="icon color12"><i className="fa fa-font"></i></span>Typography</a></li>
                         <li>
-                            <a href="#"><span class="icon color14"><i class="fa fa-paper-plane-o"></i></span>Extra Pages<span
-                                class="caret"></span></a>
+                            <a href="#"><span className="icon color14"><i className="fa fa-paper-plane-o"></i></span>Extra Pages<span
+                                className="caret"></span></a>
                             <ul>
                                 <li><a href="social-profile.html">Social Profile</a></li>
-                                <li><a href="invoice.html">Invoice<span class="label label-danger">NEW</span></a></li>
+                                <li><a href="invoice.html">Invoice<span className="label label-danger">NEW</span></a></li>
                                 <li><a href="login.html">Login Page</a></li>
                                 <li><a href="register.html">Register</a></li>
                                 <li><a href="forgot-password.html">Forgot Password</a></li>
@@ -65,37 +65,37 @@ class Teste extends Component {
                             </ul>
                         </li>
                     </ul>
-                    <ul class="sidebar-panel nav">
-                        <li class="sidetitle">MORE</li>
-                        <li><a href="grid.html"><span class="icon color15"><i class="fa fa-columns"></i></span>Grid System</a></li>
-                        <li><a href="maps.html"><span class="icon color7"><i class="fa fa-map-marker"></i></span>Maps</a></li>
-                        <li><a href="customizable.html"><span class="icon color10"><i
-                            class="fa fa-lightbulb-o"></i></span>Customizable</a></li>
-                        <li><a href="helper-classes.html"><span class="icon color8"><i class="fa fa-code"></i></span>Helper Classes</a>
+                    <ul className="sidebar-panel nav">
+                        <li className="sidetitle">MORE</li>
+                        <li><a href="grid.html"><span className="icon color15"><i className="fa fa-columns"></i></span>Grid System</a></li>
+                        <li><a href="maps.html"><span className="icon color7"><i className="fa fa-map-marker"></i></span>Maps</a></li>
+                        <li><a href="customizable.html"><span className="icon color10"><i
+                            className="fa fa-lightbulb-o"></i></span>Customizable</a></li>
+                        <li><a href="helper-classes.html"><span className="icon color8"><i className="fa fa-code"></i></span>Helper Classes</a>
                         </li>
-                        <li><a href="changelogs.html"><span class="icon color12"><i class="fa fa-file-text-o"></i></span>Changelogs</a>
+                        <li><a href="changelogs.html"><span className="icon color12"><i className="fa fa-file-text-o"></i></span>Changelogs</a>
                         </li>
                     </ul>
                 </div>
                 {/* CONTENT */}
-                <div class="content">
+                <div className="content">
 
                     {/* Start Page Header */}
-                    <div class="page-header">
-                        <h1 class="title">Blank Page</h1>
-                        <ol class="breadcrumb">
+                    <div className="page-header">
+                        <h1 className="title">Blank Page</h1>
+                        <ol className="breadcrumb">
                             <li><a href="index.html">Dashboard</a></li>
                             <li><a href="#">Extra Pages</a></li>
-                            <li class="active">Blank Page</li>
+                            <li className="active">Blank Page</li>
                         </ol>
 
                         {/* Start Page Header Right Div */}
-                        <div class="right">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <a href="index.html" class="btn btn-light">Dashboard</a>
-                                <a href="#" class="btn btn-light"><i class="fa fa-refresh"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fa fa-search"></i></a>
-                                <a href="#" class="btn btn-light" id="topstats"><i class="fa fa-line-chart"></i></a>
+                        <div className="right">
+                            <div className="btn-group" role="group" aria-label="...">
+                                <a href="index.html" className="btn btn-light">Dashboard</a>
+                                <a href="#" className="btn btn-light"><i className="fa fa-refresh"></i></a>
+                                <a href="#" className="btn btn-light"><i className="fa fa-search"></i></a>
+                                <a href="#" className="btn btn-light" id="topstats"><i className="fa fa-line-chart"></i></a>
                             </div>
                         </div>
                         {/* End Page Header Right Div */}
@@ -105,7 +105,7 @@ class Teste extends Component {
 
                     {/* //////////////////////////////////////////////////////////////////////////// */}
                     {/* START CONTAINER */}
-                    <div class="container-default">
+                    <div className="container-default">
 
 
                         <br />
@@ -125,11 +125,11 @@ class Teste extends Component {
 
 
                     {/* Start Footer */}
-                    <div class="row footer">
-                        <div class="col-md-6 text-left">
+                    <div className="row footer">
+                        <div className="col-md-6 text-left">
                             Copyright © 2015 <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a> All rights reserved.
 </div>
-                        <div class="col-md-6 text-right">
+                        <div className="col-md-6 text-right">
                             Design and Developed by <a href="http://themeforest.net/user/egemem/portfolio" target="_blank">Egemem</a>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import 'bootstrap';
 import "./css/font-awesome.min.css";
 import "./css/bootstrap.css";
 import "./css/style.css";
@@ -26,6 +27,8 @@ import "./fonts/fontawesome-webfont.svg";
 import "./fonts/fontawesome-webfont.ttf";
 import "./fonts/fontawesome-webfont.woff";
 import "./fonts/fontawesome-webfont.woff2";
+
+import "./css/ajuste_css.css";
 
 // import * as serviceWorker from './serviceWorker';
 

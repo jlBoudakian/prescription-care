@@ -4,14 +4,14 @@ import React, { Component } from "react";
 class Header extends Component {
     render() {
         return (
-            <div id="top" class="clearfix">
+            <div id="top" className="clearfix">
 
-                <div class="applogo">
-                    <a href="/home" class="logo">PrescriptionCare</a>
+                <div className="applogo">
+                    <a href="/home" className="logo">PrescriptionCare</a>
                 </div>
-                <a href="#" class="sidebar-open-button"><i class="fa fa-bars"></i></a>
-                <a href="#" class="sidebar-open-button-mobile"><i class="fa fa-bars"></i></a>
-                <a href="#sidepanel" class="sidepanel-open-button"><i class="fa fa-outdent"></i></a>
+                <a href="#" className="sidebar-open-button"><i className="fa fa-bars"></i></a>
+                <a href="#" className="sidebar-open-button-mobile"><i className="fa fa-bars"></i></a>
+                <a href="#sidepanel" className="sidepanel-open-button"><i className="fa fa-outdent"></i></a>
 
             </div>
         )

@@ -2,20 +2,53 @@ import React, { Component } from 'react';
 import Header from '../base/Header';
 import Sidebar from '../base/Sidebar';
 import Footer from '../base/Footer';
+import ModalMedicine from './modal';
 
 
 class Medicines extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showModal: false,
+            name: "",
+            quantity: 0,
+            dosage: "",
+        };
+        this.handleShowModal = this.handleShowModal.bind(this);
+        this.handleHideModal = this.handleHideModal.bind(this);
+        this.handleSave = this.handleSave.bind(this);
+    }
+
+    handleShowModal() {
+        console.log('passou')
+        this.setState({
+            showModal: true
+        });
+    }
+
+    handleHideModal() {
+        this.setState({
+            showModal: false
+        });
+    }
+
+    handleSave(event, data) {
+        event.preventDefault();
+        console.log(data);
+
+    }
+
     render() {
         return (
             <div>
                 <Header />
                 <Sidebar />
-                <div class="content">
-
+                <div className="content">
                     {/* Start Page Header */}
-                    <div class="page-header">
-                        <h1 class="title">Medicines</h1>
-                        <ol class="breadcrumb">
+                    <div className="page-header">
+                        <h1 className="title">Medicines</h1>
+                        <ol className="breadcrumb">
                             <li><a href="/home">Home</a></li>
                             <li><a href="/medicines">Medicines</a></li>
                             <li><a href="/schedule">Schedule</a></li>
@@ -24,27 +57,27 @@ class Medicines extends Component {
                     {/* End Page Header */}
 
                     {/* START CONTAINER */}
-                    <div class="container-default">
+                    <div className="container-default">
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                    Launch demo modal
-                            </button>
+                        <div className="row">
+                            <div className="col-md-12">
+                                <button type="button" className="btn btn-primary" onClick={this.handleShowModal}>
+                                    Add new medicine
+                                </button>
                             </div>
                         </div>
-                        <div class="row margin-t-10">
-                            <div class="col-md-12">
-                                <div class="panel panel-default">
+                        <div className="row margin-t-10">
+                            <div className="col-md-12">
+                                <div className="panel panel-default">
 
-                                    <div class="panel-title">
+                                    <div className="panel-title">
                                         My medicines!
                                 </div>
 
-                                    <div class="panel-body">
+                                    <div className="panel-body">
                                         <p>List of all registered medicines.</p>
 
-                                        <table class="table table-bordered table-striped">
+                                        <table className="table table-bordered table-striped">
                                             <thead>
                                                 <tr>
                                                     <td>ID</td>
@@ -52,7 +85,7 @@ class Medicines extends Component {
                                                     <td>Quant</td>
                                                     <td>Dosage</td>
                                                     <td>Pic</td>
-                                                    <td>Active</td>
+                                                    <td>Action</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -63,44 +96,13 @@ class Medicines extends Component {
                                                     <td>12/10/2015</td>
                                                     <td>As we got further and further away, it [the Earth] diminished in size.</td>
                                                     <td>
-                                                        <div class="checkbox checkbox-primary">
+                                                        <div className="checkbox checkbox-primary">
                                                             <input id="checkbox102" type="checkbox" />
-                                                            <label for="checkbox102"></label>
+                                                            <label htmlFor="checkbox102"></label>
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td># <b>1963</b></td>
-                                                    <td>New Season Jacket</td>
-                                                    <td>Jane Doe</td>
-                                                    <td>12/10/2015</td>
-                                                    <td>As we got further and further away, it [the Earth] diminished in size.</td>
-                                                    <td>Paypal</td>
-                                                </tr>
-                                                <tr>
-                                                    <td># <b>9652</b></td>
-                                                    <td>IO Mouse</td>
-                                                    <td>Jonathan Doe</td>
-                                                    <td>12/10/2015</td>
-                                                    <td>As we got further and further away, it [the Earth] diminished in size.</td>
-                                                    <td>Credit Card</td>
-                                                </tr>
-                                                <tr>
-                                                    <td># <b>9651</b></td>
-                                                    <td>Doe Bike</td>
-                                                    <td>Jonathan Doe</td>
-                                                    <td>12/10/2015</td>
-                                                    <td>As we got further and further away, it [the Earth] diminished in size.</td>
-                                                    <td>Credit Card</td>
-                                                </tr>
-                                                <tr>
-                                                    <td># <b>6962</b></td>
-                                                    <td>Zets Baseball Bat</td>
-                                                    <td>Jonathan Doe</td>
-                                                    <td>12/10/2015</td>
-                                                    <td>As we got further and further away, it [the Earth] diminished in size.</td>
-                                                    <td>Credit Card</td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -108,22 +110,17 @@ class Medicines extends Component {
                                 </div>
                             </div>
                         </div>
-
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-
-
-
                     </div>
                     {/* END CONTAINER */}
-
                     <Footer />
+                    {this.state.showModal ?
+                        <ModalMedicine
+                            handleHideModal={this.handleHideModal}
+                            handleSave={this.handleSave}
+                            name={this.state.name}
+                            quantity={this.state.quantity}
+                            dosage={this.state.dosage}
+                        /> : null}
                 </div>
             </div>
         )
