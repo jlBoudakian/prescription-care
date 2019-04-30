@@ -16,24 +16,18 @@ class ModalMedicine extends Component {
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleChangeQuantity = this.handleChangeQuantity.bind(this);
         this.handleChangeDosage = this.handleChangeDosage.bind(this);
+        this.handleCheck = this.handleCheck.bind(this);
     }
 
     componentDidMount() {
         $(ReactDOM.findDOMNode(this)).modal('show');
         $(ReactDOM.findDOMNode(this)).on('hidden.bs.modal', this.props.handleHideModal);
+        this.source = axios.CancelToken.source();
+        console.log(this.source);
     }
-
-    componentWillMount() {
-        axios.get('localhost:8080/api/users', { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
-            .then(function (response) {
-                console.log(response.data);
-                console.log(response.status);
-                console.log(response.statusText);
-                console.log(response.headers);
-                console.log(response.config);
-            });
+    componentWillUnmount() {
+        this.source.cancel('AddCaseFolderModal');
     }
-
 
     handleChangeName(event) {
         this.setState({ name: event.target.value });
@@ -41,11 +35,22 @@ class ModalMedicine extends Component {
 
     handleChangeQuantity(event) {
         this.setState({ quantity: event.target.value });
-
     }
 
     handleChangeDosage(event) {
         this.setState({ dosage: event.target.value });
+    }
+
+    handleCheck(e) {
+        if (!this.state.name) {
+            return alert('Name needed!');
+        } else if (!this.state.quantity) {
+            return alert('Quantity needed!');
+        } else if (!this.state.dosage) {
+            return alert('Dosage needed!');
+        } else {
+            this.props.handleSave(e, this.state);
+        }
     }
 
     render() {
@@ -94,14 +99,14 @@ class ModalMedicine extends Component {
                             <button
                                 type="button"
                                 className="btn btn-default"
-                                onClick={(e) => this.props.handleSave(e, this.state)}
+                                onClick={this.handleCheck}
                             >
                                 Save changes
                             </button>
                         </div>
                     </div>
                 </div>
-            </div >
+            </div>
         )
     }
 }

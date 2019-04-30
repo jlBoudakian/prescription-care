@@ -36,7 +36,6 @@ class Medicines extends Component {
     handleSave(event, data) {
         event.preventDefault();
         console.log(data);
-
     }
 
     render() {
@@ -126,7 +125,5 @@ class Medicines extends Component {
         )
     }
 }
-
-
 
 export default Medicines;
